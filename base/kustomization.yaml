@@ -1,0 +1,6 @@
+namespace: cicd
+resources:
+- deployment.yaml
+- imagestream.yaml
+- service.yaml
+- route.yaml

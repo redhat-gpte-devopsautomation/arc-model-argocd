@@ -1,0 +1,10 @@
+bases:
+- ../../base
+patches:
+- target:
+    kind: Deployment
+    name: object-detection-rest
+  patch: |-
+    - op: replace
+      path: /spec/template/spec/containers/0/image
+      value: "image-registry.openshift-image-registry.svc:5000/cicd/object-detection-rest:2022-09-19-07-46-53"
