@@ -3,8 +3,6 @@ kind: Service
 metadata:
   labels:
     app: object-detection-rest
-    app.kubernetes.io/component: object-detection-rest
-    app.kubernetes.io/instance: object-detection-rest
   name: object-detection-rest
   namespace: cicd
 spec:
